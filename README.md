@@ -1,5 +1,5 @@
 # NAME
-    __DupFind.pl__ - Find duplicated files at specified directories.
+    DupFind.pl - Tool for automated find duplicate files at specified directories.
 
 # SYNOPSIS:
     DupFind.pl [path1 [path2 [path3 [...]]]] [-o:outfile] [-v] [-r]
