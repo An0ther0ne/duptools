@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+<meta name="generator" content="Pod::HtmlEasy/v1.1.11 Pod::Parser/1.63 Perl/5.030001 [MSWin32]">
+<title>
+B<DupFind.pl> - Find duplicated files at specified directories.
+</title>
+<style type="text/css"> <!--/* Properties that apply to the entire HTML file produced */
+BODY {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    text-align: left;
+    background-color: #fff
+    padding: 1ex;
+/*  background: white;
+    color: black;
+    font-family: arial,sans-serif;
+    margin: 0;
+    padding: 1ex; */
+}
+/* The links; no change once visited */
+A:link, A:visited {
+    background: transparent;
+    color: #006699;
+}
+/* Applies to <div> contents; that's most everything
+DIV {
+    border-width: 0;
+}
+/* <pre> is used for verbatum POD */
+.pod PRE     {
+    background: #eeeeee;
+    border: 1px solid #888888;
+    color: black;
+    padding: 1em;
+    white-space: pre;
+}
+/* This is the style of the header/footer of the POD pages */
+.HF     {
+    background: #eeeeee;
+    border: 1px solid #888888;
+    color: black;
+    margin: 1ex 0;
+    padding: 0.5ex 1ex;
+}
+/* <h1> result from processing =head1, and are generated only in class="pod" */
+.pod H1      {
+    background: transparent;
+    color: #006699;
+    font-size: large;
+}
+/* Ditto <h1> */
+.pod H2, H3, H4      {
+    background: transparent;
+    color: #006699;
+    font-size: medium;
+}
+/* Applies to all <a ... generated */
+.pod .toc A  {
+    text-decoration: none;
+}
+/* <li> items in the class="toc"; the table of contents, aka "index" */
+/* <li> in class="pod" -- the actual POD -- default to browser defaults */
+.toc li {
+    line-height: 1.2em;
+    list-style-type: none;
+}
+code {
+    background: #edf2f5;	
+    word-break:break-word;
+    border:1px solid #ccc;
+    padding:2px 5px
+}
+
+--></style>
+</head>
+<body  alink="#FF0000" bgcolor="#FFFFFF" link="#000000" text="#000000" vlink="#000066">
+<div class="toc">
+<ul>
+<li><a href='#NAME'>NAME</a></li>
+<li><a href='#SYNOPSIS:'>SYNOPSIS:</a></li>
+<ul>
+<li><a href='#Options:'>Options:</a></li>
+</ul>
+<li><a href='#AUTHOR'>AUTHOR</a></li>
+<li><a href='#SEE ALSO'>SEE ALSO</a></li>
+</ul>
+</div>
+<div class='pod'>
+<a name='NAME'></a><h1>NAME</h1>
+<p><b>DupFind.pl</b> - Find duplicated files at specified directories.</p>
+<a name='SYNOPSIS:'></a><h1>SYNOPSIS:</h1>
+<pre>  DupFind.pl [path1 [path2 [path3 [...]]]] [-o:outfile] [-v] [-r]
+  DupFind.pl --help
+  </pre>
+<a name='Options:'></a><h2>Options:</h2>
+<ul>
+<li><a name='<b>path1, path2, path3, ...</b>'></a><b>path1, path2, path3, ...</b></li>
+<p>Specify root directory, or list of directories, in which we scan for files. Used current directory if omitted.</p>
+<li><a name='<b>outfile</b>'></a><b>outfile</b></li>
+<p>Output file, where information about duplicates will be saved.</p>
+<li><a name='<b>-v</b>'></a><b>-v</b></li>
+<p>Verbose output</p>
+<li><a name='<b>-r</b>'></a><b>-r</b></li>
+<p>Disable recursively scan from specified folder(s). By default program scan for duplicates from specified root folder(s) as deep as possible.</p>
+<li><a name='<b>--help</b>'></a><b>--help</b></li>
+<p>This help screen</p>
+</ul>
+<a name='AUTHOR'></a><h1>AUTHOR</h1>
+<p>Copyright (c) 2009, An0ther0ne.
+This tool is free software. You can redistribute it and/or modify it under the same terms as Perl itself.</p>
+<a name='SEE ALSO'></a><h1>SEE ALSO</h1>
+<p>perl(1), Digest::MD5, File::Find.</p>
+</div></body></html>

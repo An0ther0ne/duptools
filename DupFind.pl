@@ -1,40 +1,3 @@
-=head1 NAME
-
-B<DupFind.pl> - Find duplicated files at specified directory
-
-=head1 SYNOPSIS:
-
-  DupFind.pl [path1 [path2 [path3 [...]]]] [-o:outfile] [-v] [-r]
-  DupFind.pl --help
-  
-Where:
-
-=over
-
-=item B<path1, path2, path3, ...>
-
-Specify root directory, or list of directories, in which we scan for files. Used current directory if omitted.
-
-=item B<outfile>
-
-Output file, where information about duplicates will be saved.
-
-=item B<-v>
-
-Verbose output
-
-=item B<-r>
-
-Disable recursively scan from specified folder(s). By default program scan for duplicates from specified root folder(s) as deep as possible.
-
-=item B<--help>
-
-This help screen
-
-=back
-
-=cut
-
 use strict;
 use warnings;
 use Cwd qw/cwd/;
@@ -138,6 +101,41 @@ exit(0);
 
 __END__
 
+=head1 NAME
+
+B<DupFind.pl> - Find duplicated files at specified directories.
+
+=head1 SYNOPSIS:
+
+  DupFind.pl [path1 [path2 [path3 [...]]]] [-o:outfile] [-v] [-r]
+  DupFind.pl --help
+  
+=head2 Options:
+
+=over
+
+=item B<path1, path2, path3, ...>
+
+Specify root directory, or list of directories, in which we scan for files. Used current directory if omitted.
+
+=item B<outfile>
+
+Output file, where information about duplicates will be saved.
+
+=item B<-v>
+
+Verbose output
+
+=item B<-r>
+
+Disable recursively scan from specified folder(s). By default program scan for duplicates from specified root folder(s) as deep as possible.
+
+=item B<--help>
+
+This help screen
+
+=back
+
 =head1 AUTHOR
 
 Copyright (c) 2009, An0ther0ne.
@@ -146,3 +144,5 @@ This tool is free software. You can redistribute it and/or modify it under the s
 =head1 SEE ALSO
 
 perl(1), Digest::MD5, File::Find.
+
+=cut
