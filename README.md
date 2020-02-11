@@ -23,9 +23,8 @@
         This help screen
 
 # AUTHOR
-    Copyright (c) 2009, An0ther0ne. This tool is free software. You can
-    redistribute it and/or modify it under the same terms as Perl itself.
+Copyright (c) 2009, An0ther0ne. This tool is free software. You can redistribute it and/or modify it under the same terms as Perl itself.
 
 # SEE ALSO
-    perl(1), Digest::MD5, File::Find.
+perl(1), Digest::MD5, File::Find.
 
